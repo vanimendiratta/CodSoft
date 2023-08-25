@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height:100;
+    width:100;
+}
+
+
+
+#header{
+ display: flex;
+ align-items: center;
+ justify-content: left;
+ background-color:  #333333;
+ height:10vh;
+}
+
+#header a{
+    color: white;
+}
+
+#header img{
+    height:10vh;
+    width:10vh;
+
+    
+}
+
+#header h4{
+    color:white;
+    padding:10rem;
+}
+
+#form{
+    border: 3px solid #f1f1f1;
+    height:1000px;
+    width:100%;
+    margin-top: 200px;
+    margin-bottom: 300px;
+}
+
+#form input{
+    height: 100%;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#form button{
+    background-color: grey;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#content{
+    position: relative;
+ background-color: grey;
+ display: flex;
+ justify-content: center;
+ width:100%;
+ height:70vh;
+ 
+}
+
+#content img{
+ position: absolute;
+    height:70vh;
+    width:50vw;
+    z-index: 3;
+}
+
+#Fitness{
+    font-size: 50px;
+    position:absolute;
+    display:flex;
+    top:10%;
+    width:100%;
+    overflow-y:hidden;
+    overflow-x:auto;
+    z-index: 3;
+}
+
+#Fitness::-webkit-scrollbar{
+    display:none;
+}
+
+
+#Fitness h1{
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 1rem;
+    text-decoration: solid;
+    padding:1rem;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#Endurance{
+    font-size: 50px;
+    position:absolute;
+    display:flex;
+    top:40%;
+    width:100%;
+    overflow-y:hidden;
+    overflow-x:auto;
+    z-index:3;
+}
+
+#Endurance::-webkit-scrollbar{
+    display: none;
+}
+
+#Endurance h1{
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 1rem;
+    text-decoration: solid;
+    white-space: nowrap;
+    padding:1rem;
+    animation-name: scrolll;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#Strength{
+    font-size: 50px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    top: 80%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    z-index:3;
+}
+
+#Strength::-webkit-scrollbar{
+    display: none;
+}
+
+#Strength h1{
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: solid;
+    padding: 1rem;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(calc(-100%));
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes scrolll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: 
+        translateX(calc(-100%));
+    }
+}
+
+#aboutus{
+    position: relative;
+background-color: white;
+font-size: 20px;
+justify-content: space-between;
+height:55vh;
+}
+
+#aboutus h1{
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    padding:1rem;
+}
+
+#information{
+    position: absolute;
+    justify-content: right;
+    text-align: left;
+    font-size: 31px;
+    margin-left: 30vw;
+}
+
+#aboutus img{
+    position: absolute;
+    justify-content: left;
+    height:40vh;
+    width:40vh;
+
+}
+
+#services{
+background-color: #a9a9a9;
+height:60vh;
+display: flex;
+justify-content: center;
+}
+
+
+#services img{
+    height:40vh;
+    width:30vh;
+    padding-top:100px;
+    padding-bottom:50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+#services h1{
+    text-align: center;
+    font-size: 50px;
+    padding:4rem;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    justify-content: center;
+    position: absolute;
+}
+
+#services a{
+padding:50px;
+text-align: center;
+color: black;
+}
+
+#images{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding-left: 45px;
+}
+
+#Yoga img{
+    margin-left: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+#Yoga p{
+    font-size: 30px;
+
+}
+
+
+#Aerobics img{
+    margin-left: 115px;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    height:60vh;
+    width:150vh;
+}
+
+#Aerobics p{
+    font-size:30px;
+}
+
+#Aerobics li{
+    font-size: 30px;
+}
+
+#Zumba img{
+    margin-left: 115px;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    height:60vh;
+    width:150vh;
+}
+
+#Zumba p{
+    font-size:30px;
+}
+
+#Spa img{
+    margin-left: 115px;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    height:60vh;
+    width:150vh;
+}
+
+#Spa p{
+    font-size: 30px;
+}
+
+#Spa li{
+    font-size: 30px;
+}
+
+#Training{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+
+#Training1 img{
+    height: 820px;
+    width: 700px ;
+    margin-top:0% ;
+}
+
+#Training2{
+    display: inline-block;
+    justify-content: right;
+    margin-left: 250px;  
+    margin-bottom: 100px;
+}
+
+#Training2 h1{
+    font-size: 50px;
+    font-family:"Serif",'Times New Roman', Times, serif;
+}
+
+#Training2 img{
+    height:500px;
+    width:760px;
+    align-items:right;
+    justify-content: right;
+}
+
+#Training2 li{
+    list-style-type:circle;
+    font-size: 25px;
+}
+
+#footer{
+background-color: #333333;
+display: flex;
+align-items: center;
+justify-content: center;
+height:60px;
+width:100%;
+padding-top:50px;
+padding-bottom: 50px;
+   
+
+}
+
+
+#footer a{
+    font-size: 20px;
+    padding-left:130px;
+    padding-right: 130px;
+    color:white;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+
+#form{
+    text-align: center;
+    justify-content: center;
+    height:100%;
+}
